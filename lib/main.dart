@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       initialRoute: AppRoutes.initialRoute,
-      routes:AppRoutes.routes, //ROUTES ARE THE WAY TO NAVIGATE BETWEEN SCREENS!!!,
-      onGenerateRoute: AppRoutes.onGenerateRoute, //ON GENERATE ROUTE IS THE WAY TO NAVIGATE BETWEEN SCREENS!!!,;
+      routes:AppRoutes.getAppRoutes(), //ROUTES
+      onGenerateRoute: AppRoutes.onGenerateRoute, //ON GENERATE ROUTE IS THE WAY TO NAVIGATE BETWEEN SCREENS!!!
     );
   }
 

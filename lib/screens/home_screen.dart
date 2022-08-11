@@ -1,3 +1,4 @@
+import 'package:fl_components_new/router/app_routes.dart';
 import 'package:flutter/material.dart';
 
 import 'listview1_screen.dart';
@@ -20,20 +21,17 @@ class HomeScreen extends StatelessWidget{
       body: ListView.separated(
           itemBuilder: (context, index){
             return ListTile(
-              title: const Text("jjj"),
-              leading: const Icon(Icons.arrow_forward_ios_outlined),
+              title: Text(AppRoutes.menuOptions[index].name),
+              leading: Icon(AppRoutes.menuOptions[index].icon),
               onTap: (){
-
-                final route = MaterialPageRoute(builder: (context) => const ListView1Screen());
-                Navigator.pushNamed(context,'listView2'); //NAVIGATE TO THE LIST VIEW 1 SCREEN!!! , pushReplacement is the method to replace the current screen with the new one(login)!!!
-
+                Navigator.pushNamed(context, AppRoutes.menuOptions[index].route); //NAVIGATE TO THE SCREEN
               },
             );
           },
           separatorBuilder: (context, index){
             return const Divider();
           },
-          itemCount: 10
+          itemCount: AppRoutes.menuOptions.length
       )
     );
   }
