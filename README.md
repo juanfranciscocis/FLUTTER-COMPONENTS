@@ -1,6 +1,6 @@
 # Flutter Components App
 
-This flutter project is a show room of many widgets.
+This flutter project is a showroom of many widgets.
 
 ## How To Open The Project?
 1. Download and open all of the project file using a flutter compatible IDE.
