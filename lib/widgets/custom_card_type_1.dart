@@ -20,13 +20,12 @@ class CustomCardType1 extends StatelessWidget {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(right: 5),
+                padding: const EdgeInsets.only(right: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     TextButton(onPressed: (){},child: Text('Cancel'),style: TextButton.styleFrom(primary: Colors.green),),
                     TextButton(onPressed: (){}, child: Text('Ok'))
-
                   ],
                 ),
               )
