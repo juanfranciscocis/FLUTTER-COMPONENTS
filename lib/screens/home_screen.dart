@@ -19,6 +19,7 @@ class HomeScreen extends StatelessWidget{
       ),
 
       body: ListView.separated(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           itemBuilder: (context, index){
             return ListTile(
               title: Text(AppRoutes.menuOptions[index].name),
