@@ -9,6 +9,7 @@ import '../screens/animated_screen.dart';
 import '../screens/avatar_screen.dart';
 import '../screens/card_screen.dart';
 import '../screens/home_screen.dart';
+import '../screens/inputs_screen.dart';
 import '../screens/listview1_screen.dart';
 import '../screens/listview2_screen.dart';
 
@@ -25,6 +26,7 @@ class AppRoutes{
     MenuOption(route: 'alert', icon: Icons.doorbell_outlined, name: 'Alert Screen', screen: AlertScreen()),
     MenuOption(route: 'avatar', icon: Icons.supervised_user_circle_outlined, name: 'Avatar Screen', screen: AvatarScreen()),
     MenuOption(route: 'animated', icon: Icons.play_circle_outline, name: 'Animated Screen', screen: AnimatedScreen()),
+    MenuOption(route: 'inputs', icon: Icons.input, name: 'Inputs Screen', screen: InputScreen()),
   ];
 
 /*  static  Map<String,Widget Function(BuildContext)>routes= {
