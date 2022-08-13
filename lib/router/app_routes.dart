@@ -13,6 +13,7 @@ import '../screens/home_screen.dart';
 import '../screens/inputs_screen.dart';
 import '../screens/listview1_screen.dart';
 import '../screens/listview2_screen.dart';
+import '../screens/listview_builder_screen.dart';
 
 class AppRoutes{
 
@@ -28,7 +29,8 @@ class AppRoutes{
     MenuOption(route: 'avatar', icon: Icons.supervised_user_circle_outlined, name: 'Avatar Screen', screen: AvatarScreen()),
     MenuOption(route: 'animated', icon: Icons.play_circle_outline, name: 'Animated Screen', screen: AnimatedScreen()),
     MenuOption(route: 'inputs', icon: Icons.input, name: 'Inputs Screen', screen: InputScreen()),
-    MenuOption(route: 'slide', icon: Icons.slideshow, name: 'Slide Screen', screen:  SliderScreen())
+    MenuOption(route: 'slide', icon: Icons.slideshow, name: 'Slide Screen', screen:  SliderScreen()),
+    MenuOption(route: 'listViewBuilder', icon: Icons.refresh, name: 'List View Builder Screen', screen: ListViewBuilderScreen()),
 
   ];
 
