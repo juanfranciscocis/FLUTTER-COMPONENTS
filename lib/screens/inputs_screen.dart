@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/custom_input_field.dart';
+
 class InputScreen extends StatelessWidget{
   const InputScreen({Key? key}) : super(key: key);
 
@@ -14,29 +16,24 @@ class InputScreen extends StatelessWidget{
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: Column(
-            children: [
+            children: const [
 
-              TextFormField( //MAS INTERACCIONES DE FORMULARIO
-                autofocus: true, //cuando se inicia el formulario se pone el foco en el campo
-                initialValue: 'Juan', //valor inicial del campo
-                textCapitalization: TextCapitalization.words, //capitalizacion de texto
-                onChanged: (value){ //cuando cambia el valor del campo
-                  print(value); //imprime el valor del campo
-                },
-                validator: (value){ //validacion del campo
-                  if(value == null){
-                    return 'Campo obligatorio';
-                  }
-                  return value.length < 8 ? 'Minimo 8 caracteres' : null; //si el valor es menor a 8 caracteres devuelve un mensaje de error
-                },
-                autovalidateMode: AutovalidateMode.onUserInteraction, //validacion automatica al interactuar con el campo
-                decoration: InputDecoration(
-                  labelText: 'Nombre',
-                  hintText: 'Ingrese su nombre',
-                  icon: Icon(Icons.person),
-                ),
+              CustomInputField(
+                labelText: 'Primer Nombre',
+                hintText: 'Ingresa tu nombre',
+                icon: Icons.person,
+                helperText: 'Minimo 3 caracteres',
+                initialValue: 'Juan',
+              ),
+              SizedBox(height: 20),
+              CustomInputField(
+                labelText: 'Apellido',
+                hintText: 'Ingresa tu apellido',
+                icon: Icons.person,
+                helperText: 'Minimo 3 caracteres',
+                initialValue: 'Cisneros',
+              ),
 
-              )
 
             ],
           ),

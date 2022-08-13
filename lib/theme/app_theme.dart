@@ -32,6 +32,18 @@ class AppTheme{
           shape: const StadiumBorder()
       ),
     ),
+
+    inputDecorationTheme:  InputDecorationTheme(
+      floatingLabelStyle: TextStyle(
+        color: primary,
+      ),
+
+
+
+
+    )
+
+
   );
 
 static final ThemeData darkTheme = ThemeData.dark().copyWith(
