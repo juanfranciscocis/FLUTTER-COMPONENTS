@@ -2,6 +2,7 @@
 
 
 import 'package:fl_components_new/models/models.dart';
+import 'package:fl_components_new/screens/slider_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/alert_screen.dart';
@@ -27,6 +28,8 @@ class AppRoutes{
     MenuOption(route: 'avatar', icon: Icons.supervised_user_circle_outlined, name: 'Avatar Screen', screen: AvatarScreen()),
     MenuOption(route: 'animated', icon: Icons.play_circle_outline, name: 'Animated Screen', screen: AnimatedScreen()),
     MenuOption(route: 'inputs', icon: Icons.input, name: 'Inputs Screen', screen: InputScreen()),
+    MenuOption(route: 'slide', icon: Icons.slideshow, name: 'Slide Screen', screen:  SliderScreen())
+
   ];
 
 /*  static  Map<String,Widget Function(BuildContext)>routes= {

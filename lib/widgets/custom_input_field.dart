@@ -9,11 +9,15 @@ class CustomInputField extends StatelessWidget {
   final String labelText;
   final IconData icon;
   final String initialValue;
+  TextInputType? keyboardType = TextInputType.text;
+  bool obscureText;
+  final String formProperty;
+  final Map<String,String> formValues;
 
 
 
-  const CustomInputField({
-    Key? key, required this.hintText, required this.helperText, required this.labelText, required this.icon, required this.initialValue,
+   CustomInputField({
+    Key? key, required this.hintText, required this.helperText, required this.labelText, required this.icon, required this.initialValue, this.keyboardType,this.obscureText=false, required this.formProperty, required this.formValues
   }) : super(key: key);
 
   @override
@@ -22,7 +26,10 @@ class CustomInputField extends StatelessWidget {
       autofocus: true, //cuando se inicia el formulario se pone el foco en el campo
       initialValue: initialValue, //valor inicial del campo
       textCapitalization: TextCapitalization.words, //capitalizacion de texto
+      obscureText: obscureText, //ocultar texto
+      keyboardType: keyboardType, //tipo de teclado
       onChanged: (value){ //cuando cambia el valor del campo
+        formValues[formProperty] = value; //se asigna el valor del campo al formValues
         print(value); //imprime el valor del campo
       },
       validator: (value){ //validacion del campo
