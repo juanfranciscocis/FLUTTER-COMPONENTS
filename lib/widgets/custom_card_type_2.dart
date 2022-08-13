@@ -38,7 +38,7 @@ class CustomCard2 extends StatelessWidget{
                 width: double.infinity, //width of the card
                 height: 230, //height of the card
                 fit: BoxFit.cover, //fit the image in the card
-                fadeInDuration: const Duration(milliseconds: 200), //duration of the fade in animation
+                //fadeInDuration: const Duration(milliseconds: 200), //duration of the fade in animation
               ),
 
               if(name != null)

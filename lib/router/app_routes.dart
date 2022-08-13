@@ -5,6 +5,7 @@ import 'package:fl_components_new/models/models.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/alert_screen.dart';
+import '../screens/avatar_screen.dart';
 import '../screens/card_screen.dart';
 import '../screens/home_screen.dart';
 import '../screens/listview1_screen.dart';
@@ -21,6 +22,7 @@ class AppRoutes{
     MenuOption(route: 'listView2', icon: Icons.list, name: 'ListView 2 Screen', screen: ListView2Screen()),
     MenuOption(route: 'card', icon: Icons.credit_card, name: 'Card Screen', screen: CardScreen()),
     MenuOption(route: 'alert', icon: Icons.doorbell_outlined, name: 'Alert Screen', screen: AlertScreen()),
+    MenuOption(route: 'avatar', icon: Icons.supervised_user_circle_outlined, name: 'Avatar Screen', screen: AvatarScreen()),
   ];
 
 /*  static  Map<String,Widget Function(BuildContext)>routes= {
