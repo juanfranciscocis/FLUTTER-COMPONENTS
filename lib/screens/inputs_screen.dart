@@ -23,6 +23,18 @@ class InputScreen extends StatelessWidget{
                 onChanged: (value){ //cuando cambia el valor del campo
                   print(value); //imprime el valor del campo
                 },
+                validator: (value){ //validacion del campo
+                  if(value == null){
+                    return 'Campo obligatorio';
+                  }
+                  return value.length < 8 ? 'Minimo 8 caracteres' : null; //si el valor es menor a 8 caracteres devuelve un mensaje de error
+                },
+                autovalidateMode: AutovalidateMode.onUserInteraction, //validacion automatica al interactuar con el campo
+                decoration: InputDecoration(
+                  labelText: 'Nombre',
+                  hintText: 'Ingrese su nombre',
+                  icon: Icon(Icons.person),
+                ),
 
               )
 
